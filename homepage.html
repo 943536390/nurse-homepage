@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>护工个人主页</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<style type="text/css">
+	*{
+		margin:0;padding: 0;
+
+	}
+	img{
+		vertical-align: middle;
+	}
+		html{
+			font-size: 625%;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+			font-size: 0.16rem;
+		}
+		/*header样式*/
+		header{
+			position: fixed;
+			left: 0;top: 0;
+			width: 100%;height: 0.45rem;
+			background-color: rgb(95,192,205);
+			color: white;
+
+		}
+		.back{
+		
+			height: 100%;
+			position: relative;
+			left: 0.1rem;
+			top: 50%;
+			float: left;
+		}
+		
+		
+		header img{
+			width: 0.11rem;height: 0.2rem;
+			vertical-align: middle;
+			
+			position: relative;	
+			top: -0.15rem;		
+		}
+		header h3{
+			text-align: center;
+			font-size: 0.18rem;
+			font-weight: normal;
+			line-height: 0.45rem;
+
+		}
+
+		/*footer样式*/
+		footer{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			
+			background-color: white;
+		}
+		footer button{
+			flex: 1 50%;
+			margin: 0.1rem;
+			font-size: 0.17rem;
+			padding-top: 0.1rem;
+			padding-bottom: 0.1rem;
+			border-radius: 0.08rem;
+			outline: none;
+		}
+		.messageBtn{
+			background-color: white;
+			color: #66cccc;
+			border: 2px solid #66cccc;
+		}
+		.phoneBtn{
+			background-color: #66cccc;
+			color: white;
+			border: 2px solid #66cccc;
+		}
+		/*信息版面样式*/
+		main{
+			width: 100%;
+			
+			margin-top: 0.45rem;
+			overflow: auto;
+			margin-bottom: 0.8rem;
+		}
+		/*skill*/
+		
+		.skill{
+			height: 0.5rem;
+			border-bottom: 1px solid ;
+			padding-left: 0.2rem;
+
+		}
+		.skill span{
+			line-height: 0.5rem;
+			
+		}
+		.skill img{
+			vertical-align: middle;
+			margin-right: 0.2rem;
+			height: 0.13rem;
+		}
+	/*	content*/
+		.content{
+			margin: 0 0.2rem;
+			
+		}
+		.content div:not(.row5){
+			height: 0.5rem;
+			border-bottom: 1px solid #e1e5e7;
+			line-height: 0.5rem;
+			padding-left: 0.2rem;
+		}
+		
+		
+		.row1>img{
+			width: 0.12rem;	
+
+			margin-right: 0.05rem;	
+		}
+		.row1>.home{
+			margin-right: 0.2rem;
+		}
+
+		.question{
+			color: #999999;
+			margin-right: 0.2rem;
+		}
+		.lineImg{
+			margin-right: 0.2rem;
+		}
+		.row4>.answer{
+			color: red;
+			font-weight: bold;
+		}
+
+		.row5{
+			
+			padding-left: 0.2rem;
+			padding-bottom: 0.1rem;
+			border-bottom: 1px solid #e1e5e7;
+			
+		}
+		.row5>span{
+			display: inline-block;
+			vertical-align: middle;	
+		}
+		.row5>p{
+			border: 2px solid red;
+			display: inline-block;
+			width: 40%;
+			line-height: 0.3rem;
+			font-size: 0.15rem;
+			vertical-align: middle;
+		}
+
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="back"><img src="image/back.png"></div>
+		<h3>个人主页</h3>
+	</header>
+	<main class="main">
+		<div class="background">
+			
+		</div>
+		<div class="skill"><img src="image/line.png"><span>专业技能</span></div>
+		<div class="content">
+			<div class="row1">
+				<img src="image/star.png" class="homeImg"><span class="home">住家</span>
+				<img src="image/star.png" class="dinnerImg"><span class="dinner">不含餐</span>
+			</div>
+			<div class="row2">
+				<span class="question">从业年限</span>
+				<img src="image/line2.png" class="lineImg">
+				<span class="answer">0～3年</span>
+			</div>
+			<div class="row3">
+				<span class="question">工作时间</span>
+				<img src="image/line2.png" class="lineImg">
+				<span class="answer">全天</span>
+			</div>
+			<div class="row4">
+				<span class="question">服务价格</span>
+				<img src="image/line2.png" class="lineImg">
+				<span class="answer">25元/小时</span>
+			</div>
+			<div class="row5">
+				<span class="question">自我介绍</span>
+				<img src="image/line2.png" class="lineImg">
+				<p class="answer">可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。</p>
+			</div>
+		</div>
+	</main> 
+	<footer class="footer">
+		<button class="messageBtn">留言</button>
+		<button class="phoneBtn">电话联系</button>
+	</footer>
+</body>
+</html>
